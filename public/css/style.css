@@ -1,0 +1,25 @@
+/* Anime-inspired gradient background */
+body {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    font-family: 'Arial', sans-serif;
+}
+
+.game-btn {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 50px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.game-btn:hover {
+    transform: scale(1.1);
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.game-btn::before {
+    content: attr(data-emoji);
+    margin-right: 8px;
+}
